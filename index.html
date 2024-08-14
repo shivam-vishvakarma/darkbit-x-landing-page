@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css" />
     <title>Darkbit X</title>
   </head>
-  <body class="bg-primary-main text-white w-full">
+  <body class="bg-primary-main text-white w-full overflow-x-hidden">
     <header
-      class="bg-primary-light m-6 p-4 rounded-full flex justify-between items-center max-w-screen-xl mx-auto"
+      class="bg-primary-light w-[95%] m-6 p-1 md:p-4 rounded-full animate-inSlideDown flex justify-between items-center max-w-screen-xl mx-auto"
     >
       <section class="flex items-center">
         <a href="/" class="mx-5">
           <img src="/darkbit.svg" alt="Darkbit X" />
         </a>
-        <menu class="text-xl *:mx-4 relative">
+        <menu class="text-xl md:*:mx-2 lg:*:mx-4 relative hidden md:block">
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Blog</a>
@@ -61,119 +61,121 @@
         </menu>
       </section>
       <section>
-        <a
-          href="/"
-          class="text-2xl inline-block p-4 bg-mainGradient bg-center transition-all duration-500 rounded-full hover:[background-size:250px] hover:scale-95"
-          >Get Started</a
-        >
+        <a href="/" class="gradient-btn">Get Started</a>
       </section>
     </header>
-    <main class="overflow-hidden">
+    <main class="max-w-screen-sm min-[500px]:w-4/5 md:max-w-screen-xl mx-auto">
       <section>
-        <h1 class="text-9xl text-nowrap text-center font-semibold my-16">
+        <h1
+          class="text-4xl md:text-7xl lg:text-8xl text-nowrap text-center font-semibold my-8 lg:my-16 animate-inSlideUp"
+        >
           Introducing the <br />
           next-gen analytics
         </h1>
-        <p class="text-center text-2xl text-gray-600">
+        <p
+          class="text-center w-4/5 mx-auto text-sm md:text-xl lg:text-2xl text-gray-600 animate-inSlideUp [animation-delay:_.5s] [animation-fill-mode:both]"
+        >
           Venenatis suspendisse feugiat cursus odio commodo arcu sed felis
           pretium <br />
           elementum quis nam mattis amet consequat.
         </p>
         <div
-          class="w-1/3 mx-auto rounded-full m-4 bg-primary-light overflow-hidden flex"
+          class="w-4/5 lg:w-2/3 mx-auto rounded-full m-4 lg:my-16 bg-primary-light overflow-hidden flex"
         >
           <input
-            class="w-full bg-primary-light p-5 placeholder:text-gray-300 placeholder:text-xl placeholder:font-semibold"
+            class="w-full bg-primary-light p-2 md:p-5 placeholder:text-gray-300 placeholder:text-sm placeholder:font-thin md:placeholder:text-xl md:placeholder:font-semibold"
             placeholder="Enter your email address"
             type="text"
           />
-          <button
-            class="text-2xl inline-block p-4 bg-mainGradient bg-center rounded-full hover:[background-size:250px] hover:scale-95 transition-all duration-500 text-nowrap m-2"
-          >
-            Get Started
-          </button>
+          <button class="gradient-btn">Get Started</button>
         </div>
-      </section>
-      <section class="relative h-max">
+      </section> 
+      <section class="relative h-max max-sm:overflow-x-clip md:overflow-visible">
         <img
           src="/shape-3d-7.png"
-          class="w-96 absolute z-10 -top-24 -left-24"
+          class="w-2/6 md:w-1/5 max-w-96 absolute z-10 -top-[20%] -left-[10%] md:-left-0 md:-top-[10%] lg:-top-[10%] lg:-left-0 animate-scrollSpin"
           alt=""
         />
         <img
           src="/shape-3d-6.png"
-          class="w-80 absolute z-10 top-20 -right-24"
+          class="w-2/6 md:w-1/5 max-w-96 absolute z-10 top-1/3 -right-[10%] md:right-0"
           alt=""
         />
         <img
           src="/shape-3d-5.png"
-          class="w-80 absolute z-10 -bottom-56 left-16"
+          class="w-2/6 md:w-1/5 max-w-96 absolute z-10 -bottom-1/3 md:-bottom-1/4 left-1/4"
           alt=""
         />
         <div
-          class="w-[90%] mx-auto bg-mainGradient rounded-3xl pt-20 my-20 h-[105vh]"
+          class="w-[90%] md:w-4/5 mx-auto bg-mainGradient rounded-3xl md:pt-0 my-10 md:my-20 aspect-[2/1.5]"
         >
           <img
             src="/image-home-hero.png"
-            class="mx-auto w-[80%] h-[105vh] object-cover object-top rounded-3xl"
+            class="mx-auto w-[95%] translate-y-5  h-full object-top rounded-3xl"
             alt=""
           />
         </div>
       </section>
       <section
-        class="flex flex-col mt-40 justify-center items-center gap-16 my-72"
+        class="flex flex-col justify-center items-center gap-5 md:gap-16 mt-16 lg:mt-40 lg:my-20"
       >
-        <h2 class="text-gray-400">TRUSTED BY THE BEST BRANDS</h2>
-        <div class="relative w-screen p-4 overflow-hidden">
+        <h2 class="text-gray-400 text-sm">TRUSTED BY THE BEST BRANDS</h2>
+        <div class="relative w-screen p-2 md:p-4 overflow-hidden">
           <div
             class="absolute bg-gradient-to-r from-primary-main h-full top-0 left-0 w-1/6"
           ></div>
           <div
             class="absolute bg-gradient-to-r to-primary-main from-transparent h-full top-0 right-0 w-1/6"
           ></div>
-          <div class="flex w-screen justify-around">
-            <img src="/logo-1.svg" alt="" />
-            <img src="/logo-2.svg" alt="" />
-            <img src="/logo-3.svg" alt="" />
-            <img src="/logo-4.svg" alt="" />
-            <img src="/logo-5.svg" alt="" />
-            <img src="/logo-6.svg" alt="" />
+          <div class="flex w-screen gap-5 justify-around">
+            <img class="w-1/6" src="/logo-1.svg" alt="" />
+            <img class="w-1/6" src="/logo-2.svg" alt="" />
+            <img class="w-1/6" src="/logo-3.svg" alt="" />
+            <img class="w-1/6" src="/logo-4.svg" alt="" />
+            <img class="w-1/6" src="/logo-5.svg" alt="" />
+            <img class="w-1/6" src="/logo-6.svg" alt="" />
           </div>
         </div>
       </section>
-      <section class="relative">
-        <h2 class="text-6xl text-center my-10">
+      <section class="relative max-sm:overflow-x-clip md:overflow-visible">
+        <h2 class="text-2xl md:text-5xl lg:text-6xl text-center my-5 md:my-10">
           Simple, yet powerful features
         </h2>
-        <p class="text-xl text-center w-2/3 mx-auto text-gray-400">
+        <p
+          class="text-sm font-semibold lg:text-xl text-center w-2/3 md:w-4/5 mx-auto text-gray-400"
+        >
           Adipiscing iaculis turpis ornare egestas ullamcorper amet non blandit
           lobortis eu lorem tortor elit feugiat lectus risus ultricies convallis
           nibh sagittis. In est vitae tempor diam.
         </p>
         <img
           src="/shape-3d-5.png"
-          class="w-80 absolute z-10 top-28 -right-20"
+          class="w-2/6 md:w-1/5 max-w-96 absolute z-10 md:top-28 right-0 md:right-0 lg:-right-20 lg:top-[12%]"
           alt=""
         />
         <div
-          class="group m-3 rounded-2xl overflow-hidden grid grid-cols-2 mt-10 hover:scale-95 transition-all duration-500"
+          class="group m-3 rounded-2xl overflow-hidden grid md:grid-cols-2 mt-10 hover:scale-95 transition-all duration-500"
         >
-          <img
-            src="/image-1-features-section.svg"
-            class="w-full"
-            alt="fetured 1"
-          />
+          <div class="w-full max-md:aspect-[4/2]">
+            <img
+              src="/image-1-features-section.svg"
+              class="max-w-full w-full h-full object-cover"
+              alt="fetured 1"
+            />
+          </div>
           <div
-            class="h-full bg-primary-light w-full flex-col flex items-start justify-center p-20 gap-10"
+            class="h-full bg-primary-light w-full grid grid-cols-12 p-5 gap-4 lg:gap-10"
           >
-            <img src="/icon-1-features-section.svg" alt="" />
-            <h2 class="text-5xl font-bold">Advanced analytics</h2>
-            <p class="text-xl font-normal">
+            <h2 class="text-2xl col-span-10 lg:row-start-1 lg:col-start-1 text-nowrap md:text-3xl font-bold">
+              Advanced analytics
+            </h2>
+            <img class="col-span-2 lg:row-start-1 lg:col-start-10" src="/icon-1-features-section.svg" alt="" />
+            <p class="text-xl max-w-full font-normal col-span-12">
               Adipiscing iaculis turpis ornare egestas ullamcorper amet non
               blandit lobortis eu dol lorem tortor elit feugiat lectus risus
               ultricies convallis nibh sagittis. In est vitae tempor.
             </p>
-            <p class="text-xl font-semibold">
+            <p class="text-xl font-semibold col-span-12">
               Learn More
               <span
                 ><img
@@ -184,23 +186,31 @@
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-7 h-[60vh] m-3 gap-3">
+        <div class="grid md:grid-cols-7 m-3 gap-3">
           <div
-            class="group col-span-4 overflow-hidden grid grid-cols-2 w-full h-full bg-primary-light rounded-2xl hover:scale-95 transition-all duration-500"
+            class="group col-span-7 md:col-span-4 overflow-hidden grid grid-cols-6 w-full h-full bg-primary-light rounded-2xl hover:scale-95 transition-transform duration-500"
           >
-            <div class="m-3 overflow-hidden flex flex-col mt-10 p-10">
-              <div class="flex flex-col gap-8">
+            <div
+              class="m-3 col-span-6 md:col-span-4 md:overflow-hidden lg:mt-10 lg:p-10 md:col-start-1 md:row-start-1"
+            >
+              <div class="grid grid-cols-6 gap-2 md:gap-8">
                 <img
                   src="/icon-3-features-section.svg"
-                  class="size-10"
+                  class="size-10 col-start-6 order-1 md:col-start-1 md:row-start-1 md:col-span-6"
                   alt=""
                 />
-                <h2 class="text-3xl font-bold">Automated reports</h2>
-                <p class="text-xl font-normal text-gray-400">
+                <h2
+                  class="col-span-4 text-xl whitespace-nowrap md:text-3xl md:whitespace-normal font-bold order-0"
+                >
+                  Automated reports
+                </h2>
+                <p
+                  class="text-xl md:text-xl col-span-6 font-normal text-gray-400 order-2"
+                >
                   Nulla integer vitae leo massa lacus suspendisse fames pretium
                   congue idest donec nisl nullam feugiat.
                 </p>
-                <p class="text-xl font-semibold">
+                <p class="text-xl md:font-semibold col-span-6 order-3">
                   Learn More
                   <span
                     ><img
@@ -211,19 +221,29 @@
                 </p>
               </div>
             </div>
-            <img src="/image-2-features-section.png" class="h-full" alt="" />
+            <img
+              src="/image-2-features-section.png"
+              class="h-full md:w-full md:object-cover col-span-6 md:col-span-2 row-start-1 col-start-1"
+              alt=""
+            />
           </div>
           <div
-            class="group col-span-3 flex justify-center items-center p-10 overflow-hidden w-full h-full bg-primary-light rounded-2xl hover:scale-95 transition-all duration-500"
+            class="group col-span-7 md:col-span-3 flex justify-center items-center p-4 overflow-hidden w-full h-full bg-primary-light rounded-2xl hover:scale-95 transition-all duration-500"
           >
-            <div class="flex flex-col gap-8 px-10">
-              <img src="/icon-2-features-section.svg" class="size-10" alt="" />
-              <h2 class="text-3xl font-bold">Integrations</h2>
-              <p class="text-xl font-normal text-gray-400">
+            <div class="grid grid-cols-6 gap-2 md:gap-8 px-2 lg:px-5">
+              <img
+                src="/icon-2-features-section.svg"
+                class="size-10 col-start-6 lg:col-start-1 col-span-6"
+                alt=""
+              />
+              <h2 class="text-3xl md:text-4xl font-bold col-span-5 col-start-1 row-start-1 lg:row-start-2">
+                Integrations
+              </h2>
+              <p class="text-xl font-normal text-gray-400 col-span-6">
                 Massa ac vehicula aliquet dui dragon foler condimentum nam
                 feugiat sodales dolorolme pellentesque
               </p>
-              <p class="text-xl font-semibold">
+              <p class="text-xl font-semibold col-span-6">
                 Learn More
                 <span
                   ><img
@@ -235,52 +255,52 @@
             </div>
           </div>
         </div>
-        <div class="relative flex items-center justify-center gap-10 my-20">
+        <div
+          class="relative flex items-center justify-center gap-4 md:gap-6 lg:gap-10 my-10 md:my-16 lg:my-20"
+        >
           <img
             src="/shape-3d-7.png"
-            class="w-96 absolute z-10 -left-28 -top-44"
+            class="w-2/6 md:w-1/4 max-w-96 absolute z-10 -left-[10%] -top-full md:-left-[1%] lg:-left-28 md:-top-full lg:-top-44"
             alt=""
           />
           <img
             src="/shape-3d-3.png"
-            class="w-80 absolute z-10 -right-20 -top-52"
+            class="w-3/12 md:w-1/6 max-w-96 absolute z-10 -right-[10%] top-1/4 md:right-[1%] lg:-right-20 lg:-top-52"
             alt=""
           />
-          <button
-            class="text-2xl inline-block p-4 bg-mainGradient bg-center transition-all duration-500 rounded-full hover:[background-size:250px] hover:scale-95"
-          >
-            Get Started
-          </button>
-          <button
-            class="text-2xl inline-block p-4 bg-transparent border-white border-2 transition-all duration-500 rounded-full hover:bg-white hover:text-black hover:scale-95"
-          >
-            Browse all features
-          </button>
+          <button class="gradient-btn">Get Started</button>
+          <button class="border-btn">Browse all features</button>
         </div>
       </section>
       <section>
-        <h2 class="text-6xl text-center my-10">How does Darkbit works?</h2>
-        <p class="text-xl text-center w-2/3 mx-auto text-gray-400">
+        <h2 class="text-2xl md:text-6xl text-center my-4 md:my-10">
+          How does Darkbit works?
+        </h2>
+        <p
+          class="text-sm md:text-xl text-center w-4/5 md:w-2/3 mx-auto text-gray-400"
+        >
           Adipiscing iaculis turpis ornare egestas ullamcorper amet non blandit
           lobortis eu lorem tortor elit feugiat lectus risus ultricies convallis
           nibh sagittis. In est vitae tempor diam.
         </p>
-        <div class="grid grid-cols-2 m-8">
-          <div class="w-full rounded-3xl overflow-hidden">
-            <img src="/image-steps.svg" class="w-full" alt="" />
+        <div class="grid md:grid-cols-12 p-2 lg:m-4 xl:m-8">
+          <div class="mx-auto col-span-12 lg:hidden xl:block md:col-span-5 my-4 w-3/5 md:w-full rounded-3xl md:rounded-none md:rounded-l-3xl overflow-hidden">
+            <img src="/image-steps.svg" class="w-full h-full object-cover" alt="" />
           </div>
-          <div class="w-full p-10 flex flex-col justify-between">
+          <div class="w-full col-span-12 md:col-span-7 lg:col-span-12 xl:col-span-7 p-2 lg:p-10 flex flex-col justify-between">
             <div class="flex items-start">
-              <div class="w-28 m-2">
+              <div class="w-28 md:w-2/12 lg:w-2/6 m-2">
                 <img
                   src="/icon-1-steps.svg"
                   class="size-full object-contain object-center"
                   alt=""
                 />
               </div>
-              <div class="m-2">
-                <h2 class="text-4xl font-bold">1. Create a free account</h2>
-                <p class="text-xl text-gray-400 my-5">
+              <div class="m-1 xl:m-2">
+                <h2 class="text-2xl lg:text-4xl font-bold">
+                  1. Create a free account
+                </h2>
+                <p class="text-sm md:text-xs lg:text-xl text-gray-400 my-2 lg:my-5">
                   Massa ac vehicula aliquet dui dragon condimentum nam feugiat
                   sodales dolor pellentesque est tortor scelerisque faucibus
                   mattis risus massa mi ut nul.
@@ -288,18 +308,18 @@
               </div>
             </div>
             <div class="flex items-start">
-              <div class="w-28 m-2">
+              <div class="w-28 md:w-2/12 lg:w-2/6 m-2">
                 <img
                   src="/icon-2-steps.svg"
                   class="size-full object-contain object-center"
                   alt=""
                 />
               </div>
-              <div class="m-2">
-                <h2 class="text-4xl font-bold">
+              <div class="m-1 xl:m-2">
+                <h2 class="text-2xl lg:text-4xl font-bold">
                   2. Install our tracking pixel
                 </h2>
-                <p class="text-xl text-gray-400 my-5">
+                <p class="text-sm md:text-xs lg:text-xl text-gray-400 my-2 lg:my-5">
                   Sit laoreet etiam risus nulla ut non ullamcorper cursus
                   vulputate ipsum tortor eu arcu diam sed turpis imperdiet eu
                   sem urna lectus ac amet proin adipiscing.
@@ -307,18 +327,18 @@
               </div>
             </div>
             <div class="flex items-start">
-              <div class="w-28 m-2">
+              <div class="w-28 md:w-2/12 lg:w-2/6 m-2">
                 <img
                   src="/icon-3-steps.svg"
                   class="size-full object-contain object-center"
                   alt=""
                 />
               </div>
-              <div class="m-2">
-                <h2 class="text-4xl font-bold">
+              <div class="m-1 xl:m-2">
+                <h2 class="text-2xl lg:text-4xl font-bold">
                   3. Start tracking your website
                 </h2>
-                <p class="text-xl text-gray-400 my-5">
+                <p class="text-sm md:text-xs lg:text-xl text-gray-400 my-2 lg:my-5">
                   Nulla pellentesque bibendum sed id pellentesque blandit ut id
                   justo nullam lectus augue commodo nullam vestibulum odio
                   rutrum orci sed sit urna vitae in.
@@ -328,82 +348,86 @@
           </div>
         </div>
         <div class="flex justify-center items-center my-5">
-          <button
-            class="text-2xl inline-block p-4 bg-mainGradient bg-center transition-all duration-500 rounded-full hover:[background-size:250px] hover:scale-95"
-          >
-            Get Started
-          </button>
+          <button class="gradient-btn">Get Started</button>
         </div>
       </section>
       <section class="relative">
         <img
           src="/shape-3d-5.png"
-          class="w-96 absolute z-10 right-40 -top-36"
+          class="w-2/6 md:w-1/5 max-w-96 absolute z-10 right-[5%] -top-[15%] md:-top-[10%]"
           alt=""
         />
         <div
-          class="grid relative grid-cols-7 h-[110vh] bg-primary-light m-8 rounded-3xl overflow-hidden my-64"
+          class="grid grid-cols-7 bg-primary-light m-2 lg:m-8 rounded-3xl my-20 lg:my-40 xl:my-64"
         >
-          <div class="col-span-4 p-4 flex justify-center items-center">
-            <div class="px-10 pr-28">
-              <h2 class="text-7xl">
+          <div
+            class="col-span-7 xl:col-span-4 xl:col-start-1 xl:row-start-1 p-4 flex justify-center items-center"
+          >
+            <div class="xl:px-10 xl:pr-28">
+              <h2 class="text-4xl md:text-5xl xl:text-7xl">
                 Start tracking your user analytics to increase your sales
               </h2>
-              <p class="text-2xl my-10 mb-20 text-gray-400">
+              <p
+                class="text-xl md:text-2xl my-4 xl:my-10 mb-4 xl:mb-20 text-gray-400"
+              >
                 Adipiscing iaculis turpis ornare egestas ullamcorper amet non
                 blandit lobortis eu lorem tortor elit feugiat.
               </p>
-              <button
-                class="text-2xl inline-block p-4 bg-mainGradient bg-center transition-all duration-500 rounded-full hover:[background-size:250px] hover:scale-95"
-              >
-                Get Started
-              </button>
+              <button class="gradient-btn">Get Started</button>
             </div>
           </div>
-          <div class="col-span-3 bg-mainGradient"></div>
+          <div
+            class="col-span-7 lg:col-span-3 col-start-1 xl:col-start-5 rounded-t-2xl row-start-1 h-full bg-mainGradient"
+          ></div>
           <img
             src="/image-2-cta-v1.svg"
-            class="absolute right-0 bottom-0 w-1/2 rounded-l-3xl"
+            class="w-[90%] xl:w-[50%] mx-auto xl:mx-0 -translate-y-8 col-span-7 xl:right-0 xl:bottom-0 xl:translate-y-0 xl:col-span-4 xl:absolute col-start-1 row-start-1 rounded-t-3xl lg:rounded-l-3xl"
             alt=""
           />
         </div>
         <img
           src="/shape-3d-2.png"
-          class="w-80 absolute z-10 -bottom-40 left-96"
+          class="w-2/6 md:w-1/5 max-w-96 absolute z-10 -bottom-[10%] right-[40%]"
           alt=""
         />
       </section>
       <section>
         <div>
           <div
-            class="pt-20 pb-20 mx-auto flex flex-col items-center text-center gap-8"
+            class="py-2 md:py-20 lg:py-10 mx-auto flex flex-col items-center text-center gap-3 md:gap-8"
           >
-            <h2 class="text-6xl font-bold">All-in-one analytics tool</h2>
-            <p class="w-2/3 text-gray-400 font-normal text-lg">
+            <h2 class="text-3xl md:text-6xl font-bold">
+              All-in-one analytics tool
+            </h2>
+            <p
+              class="w-4/5 md:w-2/3 text-gray-400 font-normal text-sm md:text-lg"
+            >
               Vitae non neque feugiat nisl diam varius auctor nec vulputate at
               nunc tempor justo eget posuere consectetur tellus est libero vel
               molestie etiam maecenas donec nunc.
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-2 max-w-screen-xl mx-auto gap-x-28">
-          <div class="bg-primary-light rounded-3xl overflow-hidden mt-24">
-            <div class="p-10">
-              <div class="grid grid-cols-9 gap-4 py-2 pb-10">
-                <div class="col-span-7 grid gap-4">
-                  <h2 class="text-3xl font-bold">Monitor campaigns</h2>
-                  <p class="text-gray-400 text-xl">
+        <div class="max-w-screen-xl mx-auto lg:columns-2">
+          <div
+            class="bg-primary-light rounded-3xl overflow-hidden my-8 mx-2 lg:mt-[20%]"
+          >
+            <div class="p-4 md:p-10">
+              <div class="grid grid-cols-6 gap-4 py-2 md:pb-10">
+                <div class="col-span-5 grid gap-4">
+                  <h2 class="text-3xl font-bold">User analytics</h2>
+                  <p class="text-gray-400 text-sm md:text-xl">
                     Adipiscing iaculis turpis ornare egestas olerl ullamcorper
                     amil non blandit lobortis.
                   </p>
                 </div>
-                <div class="col-span-2">
+                <div>
                   <img src="/icon-1-tools.svg" alt="" />
                 </div>
               </div>
               <div class="border-t border-gray-500"></div>
-              <div class="text-gray-400 text-xl py-10">
-                <ul class="space-y-6 font-semibold">
+              <div class="text-gray-400 text-sm md:text-xl py-4 md:py-10">
+                <ul class="space-y-2 md:space-y-6 font-semibold">
                   <li>
                     <img src="/check.svg" class="inline w-5 text-xl" alt="" />
                     Arcu aliquet eget elementum pellentesque ole.
@@ -425,23 +449,25 @@
             </div>
             <img src="/image-1-tools.svg" class="w-full" alt="" />
           </div>
-          <div class="bg-primary-light rounded-3xl overflow-hidden mb-24">
-            <div class="p-10">
-              <div class="grid grid-cols-9 gap-4 py-2 pb-10">
-                <div class="col-span-7 grid gap-4">
-                  <h2 class="text-3xl font-bold">Monitor campaigns</h2>
-                  <p class="text-gray-400 text-xl">
+          <div class="bg-primary-light rounded-3xl overflow-hidden my-8 mx-2">
+            <div class="p-4 md:p-10">
+              <div class="grid grid-cols-6 gap-4 py-2 md:pb-10">
+                <div class="col-span-5 grid gap-4">
+                  <h2 class="text-3xl font-bold whitespace-nowrap">
+                    Monitor campaigns
+                  </h2>
+                  <p class="text-gray-400 text-sm md:text-xl">
                     Adipiscing iaculis turpis ornare egestas olerl ullamcorper
                     amil non blandit lobortis.
                   </p>
                 </div>
-                <div class="col-span-2">
-                  <img src="/icon-1-tools.svg" alt="" />
+                <div>
+                  <img src="/icon-2-tools.svg" alt="" />
                 </div>
               </div>
               <div class="border-t border-gray-500"></div>
-              <div class="text-gray-400 text-xl py-10">
-                <ul class="space-y-6 font-semibold">
+              <div class="text-gray-400 text-sm md:text-xl py-4 md:py-10">
+                <ul class="space-y-2 md:space-y-6 font-semibold">
                   <li>
                     <img src="/check.svg" class="inline w-5 text-xl" alt="" />
                     Arcu aliquet eget elementum pellentesque ole.
@@ -463,23 +489,23 @@
             </div>
             <img src="/image-2-tools.svg" class="w-full" alt="" />
           </div>
-          <div class="bg-primary-light rounded-3xl overflow-hidden mt-24">
-            <div class="p-10">
-              <div class="grid grid-cols-9 gap-4 py-2 pb-10">
-                <div class="col-span-7 grid gap-4">
-                  <h2 class="text-3xl font-bold">Monitor campaigns</h2>
-                  <p class="text-gray-400 text-xl">
+          <div class="bg-primary-light rounded-3xl overflow-hidden my-8 mx-2">
+            <div class="p-4 md:p-10">
+              <div class="grid grid-cols-6 gap-4 py-2 md:pb-10">
+                <div class="col-span-5 grid gap-4">
+                  <h2 class="text-3xl font-bold">Live reports</h2>
+                  <p class="text-gray-400 text-sm md:text-xl">
                     Adipiscing iaculis turpis ornare egestas olerl ullamcorper
                     amil non blandit lobortis.
                   </p>
                 </div>
-                <div class="col-span-2">
-                  <img src="/icon-1-tools.svg" alt="" />
+                <div>
+                  <img src="/icon-3-tools.svg" alt="" />
                 </div>
               </div>
               <div class="border-t border-gray-500"></div>
-              <div class="text-gray-400 text-xl py-10">
-                <ul class="space-y-6 font-semibold">
+              <div class="text-gray-400 text-sm md:text-xl py-4 md:py-10">
+                <ul class="space-y-2 md:space-y-6 font-semibold">
                   <li>
                     <img src="/check.svg" class="inline w-5 text-xl" alt="" />
                     Arcu aliquet eget elementum pellentesque ole.
@@ -501,23 +527,23 @@
             </div>
             <img src="/image-3-tools.png" class="w-full" alt="" />
           </div>
-          <div class="bg-primary-light rounded-3xl overflow-hidden mb-24">
-            <div class="p-10">
-              <div class="grid grid-cols-9 gap-4 py-2 pb-10">
-                <div class="col-span-7 grid gap-4">
-                  <h2 class="text-3xl font-bold">Monitor campaigns</h2>
-                  <p class="text-gray-400 text-xl">
+          <div class="bg-primary-light rounded-3xl overflow-hidden my-8 mx-2">
+            <div class="p-4 md:p-10">
+              <div class="grid grid-cols-6 gap-4 py-2 md:pb-10">
+                <div class="col-span-5 grid gap-4">
+                  <h2 class="text-3xl font-bold">User journey</h2>
+                  <p class="text-gray-400 text-sm md:text-xl">
                     Adipiscing iaculis turpis ornare egestas olerl ullamcorper
                     amil non blandit lobortis.
                   </p>
                 </div>
-                <div class="col-span-2">
-                  <img src="/icon-1-tools.svg" alt="" />
+                <div>
+                  <img src="/icon-4-tools.svg" alt="" />
                 </div>
               </div>
               <div class="border-t border-gray-500"></div>
-              <div class="text-gray-400 text-xl py-10">
-                <ul class="space-y-6 font-semibold">
+              <div class="text-gray-400 text-sm md:text-xl py-4 md:py-10">
+                <ul class="space-y-2 md:space-y-6 font-semibold">
                   <li>
                     <img src="/check.svg" class="inline w-5 text-xl" alt="" />
                     Arcu aliquet eget elementum pellentesque ole.
@@ -540,15 +566,61 @@
             <img src="/image-4-tools.svg" class="w-full" alt="" />
           </div>
         </div>
-        <div class="text-center py-16">
-            <button
-                class="text-2xl inline-block p-4 bg-mainGradient bg-center transition-all duration-500 rounded-full hover:[background-size:250px] hover:scale-95"
-              >
-                Get Started
-              </button>
+        <div class="text-center py-4 md:py-16">
+          <button class="gradient-btn">Get Started</button>
         </div>
       </section>
     </main>
+    <footer class="border-t-2 border-gray-400 lg:px-5 xl:px-32 lg:py-8">
+      <section
+        class="flex justify-between flex-col lg:flex-row items-center py-8"
+      >
+        <div>
+          <div class="w-3/5 md:w-2/5 lg:w-1/3 mx-auto lg:mx-0">
+            <img class="w-full h-full" src="/darkbit.svg" alt="Darkbit X" />
+          </div>
+          <p
+            class="w-4/5 lg:w-3/5 xl:w-1/2 text-center lg:text-left mx-auto lg:mx-0 text-sm md:text-xl text-gray-400 font-semibold my-4"
+          >
+            Lorem ipsum dolor sit amet consectetur dolor adipiscing elit
+            phasellus amet dui.
+          </p>
+        </div>
+        <div class="flex gap-4">
+          <button class="gradient-btn">Get Started</button>
+          <button class="border-btn">Talk to sales</button>
+        </div>
+      </section>
+      <section
+        class="flex flex-col lg:flex-row items-center gap-4 py-2 justify-between border-gray-400 border-t-2 pt-8"
+      >
+        <p
+          class="text-xs text-center max-sm:order-2 leading-5 md:text-xl text-gray-400 font-semibold"
+        >
+          Copyright © Darkbit X |<br class="lg:hidden" />
+          Designed by <span class="text-white underline">BRIX Templates</span> -
+          Powered by
+          <span class="text-white underline">Webflow</span>
+        </p>
+        <div class="flex max-md:order-1">
+          <div class="size-10 cursor-pointer">
+            <img src="/twitch.svg" alt="" class="w-full h-full" />
+          </div>
+          <div class="size-10 cursor-pointer">
+            <img src="/twitter.svg" alt="" class="w-full h-full" />
+          </div>
+          <div class="size-10 cursor-pointer">
+            <img src="/tiktok.svg" alt="" class="w-full h-full" />
+          </div>
+          <div class="size-10 cursor-pointer">
+            <img src="/whatsapp.svg" alt="" class="w-full h-full" />
+          </div>
+          <div class="size-10 cursor-pointer">
+            <img src="/youtube.svg" alt="" class="w-full h-full" />
+          </div>
+        </div>
+      </section>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

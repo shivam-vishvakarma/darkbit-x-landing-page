@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.cms{
-    @apply bg-white inline-block rounded-full px-4 py-2 text-sm font-semibold text-gray-700;
+.cms {
+  @apply bg-white inline-block rounded-full px-4 py-2 text-sm font-semibold text-gray-700;
+}
+
+.gradient-btn {
+  @apply text-xl whitespace-nowrap md:text-2xl inline-block p-2 px-4 m-1 md:p-4 bg-mainGradient bg-center transition-all duration-500 rounded-full hover:[background-size:250px] hover:scale-95;
+}
+
+.border-btn {
+  @apply text-xl whitespace-nowrap md:text-2xl inline-block p-2 px-4 md:p-4 bg-transparent border-white border-2 transition-all duration-500 rounded-full hover:bg-white hover:text-black hover:scale-95;
 }
